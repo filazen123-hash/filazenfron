@@ -2,11 +2,11 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="cadastro-adm" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajustado o 'name' para viewport padrão -->
     <link rel="stylesheet" href="../assets/css/cadastros_logins/estilizacaocadastros.css">
     <script src="../assets/JS/cadastroempresa.js" defer></script>
-    <script src="https://code.jquery.com/jquery-4.0.0.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="https://jquery.com"></script>
+    <script src="https://cloudflare.com"></script>
     <title>tela-cadastro-adm</title>
 </head>
 <body>
@@ -18,9 +18,9 @@
             <h3>C A D A S T R O - E M P R E S A </h3>
 
             <details>
-                <summary ><strong></strong></summary>
+                <summary><strong>Opções</strong></summary>
                 <ul>
-                    <li><a href="../index.html" target="_blank" >Tela inicial</a></li>
+                    <li><a href="../index.html" target="_blank">Tela inicial</a></li>
                 </ul>
             </details>
         </div>
@@ -29,25 +29,31 @@
         <div class="card-fundo">
             <section class="cadastros">
                 <div class="nomecss">
-                    <label for="name">NOME EMPRESA: </label>
-                    <input type="text" id="nomeempresa" name="nomeempresa" placeholder="Digite o nome da empresa ">
+                    <!-- CORREÇÃO: O 'for' agora aponta exatamente para o 'id' do input -->
+                    <label for="nomeempresa">NOME EMPRESA: </label>
+                    <input type="text" id="nomeempresa" name="nomeempresa" placeholder="Digite o nome da empresa">
                 </div>
                 <div class="nomecss">
+                    <!-- CORREÇÃO: O 'for' agora aponta exatamente para o 'id' do input -->
                     <label for="cnpj">CNPJ:</label>
                     <input type="text" name="cnpj" id="cnpj" placeholder="Digite o CNPJ da empresa">
                 </div>
                 <div class="tipo">
-                
-                    <label for="Tipo">Tipo:    </label>
-                    <label for="Orgao_Publico">Órgão Público: </label>
+                    <span class="titulo-tipo">Tipo:</span>
+                    
+                    <!-- CORREÇÃO: Ajustado os 'for' para os respectivos IDs dos inputs do tipo radio -->
+                    <label for="orgao_publico">Órgão Público: </label>
                     <input type="radio" name="tipoempresa" id="orgao_publico" value="Orgao_Publico">
+                    
                     <label for="Hospital">Hospital: </label>
                     <input type="radio" name="tipoempresa" id="Hospital" value="Hospital">  
+                    
                     <label for="Banco">Banco: </label>
                     <input type="radio" name="tipoempresa" id="Banco" value="Banco">  
                 </div>
                 <div class="nomecss">
-                    <label for="senha">CRIE UMA SENHA:</label>
+                    <!-- CORREÇÃO: O 'for' agora aponta exatamente para o 'id' do input -->
+                    <label for="senhaempresa">CRIE UMA SENHA:</label>
                     <input type="password" name="senha" id="senhaempresa" maxlength="8" placeholder="Crie sua senha até 8 caracteres">
                 </div>
                 <button onclick="ircadunidade()">CONTINUAR</button>
