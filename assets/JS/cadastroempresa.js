@@ -19,7 +19,7 @@ async function ircadunidade() {
                 cnpj: cnpj,
                 tipo: tipos,
                 senha: senhaempresa,
-                nome: nomeempresa // 👈 Substitua "nome" pelo nome exato que o seu backend espera (ex: nome_empresa)
+                nome_social: nomeempresa // 👈 Substitua "nome" pelo nome exato que o seu backend espera (ex: nome_empresa)
             })
         });
 
