@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Fredoka:wght@300..700&family=Gluten:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Purple+Purse&family=Quicksand:wght@300..700&family=Ribeye&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0px;
+}
+.cabeçalho{
+    margin: 0%;
+    padding: 1px 1px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #f5efe0;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+}
+
+.logotipo img{
+    padding: 0;
+    width: 190px;
+    height: 120px;
+    object-position: center;
+}
+
+summary::marker{
+    content: "\22EE";
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 55px;
+}
+details[open] summary::marker{
+color: #383837;
+font-size: 27px;
+} 
+
+li{
+    font-size: 20px;
+}
+
+a{
+    color: #383837;
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF3E0;
+    background-image: url(/assets/img/fundo.png);
+}
+.card-fundo{
+    width: 750px;
+    max-width: 90%;
+    background-color: #ff7b00;
+    border: 1px solid #ff7b00;
+    border-radius: 25px;
+    padding: 150px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.18);
+}
+
+a, img{
+    display: flex;
+    width: 250px;
+    height: 160px;
+    border: 1px;
+    border-radius: 9px;
+    object-fit: cover;
+    object-position: bottom;
+    overflow: hidden;
+}

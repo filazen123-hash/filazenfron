@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Fredoka:wght@300..700&family=Gluten:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Purple+Purse&family=Quicksand:wght@300..700&family=Ribeye&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cabeçalho{
+    margin: 0%;
+    padding: 1px 1px; 
+    padding-right: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #FBF7F5;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+}
+.cabeçalho h3{
+    font-family: 'Poppins', sans-serif;  
+    font-size: 15px;         
+    letter-spacing: 12px;    
+    white-space: nowrap;
+    text-align: center;
+}
+img{
+    padding: 0;
+    width: 160px;
+    height: 100px;
+    object-position: center;
+}
+
+summary::marker{
+    content: "\22EE";
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 55px;
+}
+details[open] summary::marker{
+color: #383837;
+font-size: 27px;
+} 
+
+li{
+    font-size: 20px;
+}
+
+a{
+    color: #383837;
+}
+
+main{
+    min-height: 100vh;
+    background-image: url("../../img/fundo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-fundo{
+    width: 750px;
+    max-width: 90%;
+    max-height: 50%;
+    background-color: #ff7b00;
+    border: 1px solid #ff7b00;
+    border-radius: 25px;
+    padding: 25px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.18);
+}
+.cadastros{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+.nomecss{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+}
+.nomecss label {
+    font-weight: bold;
+    font-size: 18px;
+    color: #2B1304;
+    white-space: nowrap;            
+    text-transform: uppercase;
+}
+
+.cadastros label{
+    font-size: 25px;
+    padding: 10px 0px 2px 0px;
+    color: #2B1304;
+}
+.cadastros input{
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    height: 45px;
+    border-radius: 25px ;
+    box-shadow: 0 2px 5.5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.genero{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    box-shadow: none;
+}
+.genero input[type="radio"] {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    
+    width: 18px !important;
+    height: 18px !important;
+    min-width: 18px !important;
+    min-height: 18px !important;
+    
+    border: 2px solid #ffffff !important; /* Borda branca da bolinha */
+    border-radius: 50% !important;        /* Garante que fica redondinho */
+    
+    background: transparent !important;   /* Tira o fundo laranja/retangular */
+    box-shadow: none !important;          /* Remove a sombra retangular */
+    outline: none !important;            /* Tira a linha de foco do navegador */
+    
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+}
+.genero input[type="radio"]:checked {
+    background-color: #ffffff !important;
+    border: 2px solid #ffffff !important;
+}
+
+.prioridade input[type="radio"] {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    
+    width: 1px !important;
+    height: 18px !important;
+    min-width: 18px !important;
+    min-height: 18px !important;
+    
+    border: 2px solid #ffffff !important; 
+    border-radius: 50% !important;        
+    
+    background: transparent !important;   
+    box-shadow: none !important;          
+    outline: none !important;            
+    
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+}
+.prioridade input[type="radio"]:checked {
+    background-color: #ffffff !important;
+    border: 2px solid #ffffff !important;
+}
+
+.tipo input[type="radio"] {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    
+    width: 1px !important;
+    height: 18px !important;
+    min-width: 18px !important;
+    min-height: 18px !important;
+    
+    border: 2px solid #ffffff !important; 
+    border-radius: 50% !important;        
+    
+    background: transparent !important;   
+    box-shadow: none !important;          
+    outline: none !important;            
+    
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+}
+.tipo input[type="radio"]:checked {
+    background-color: #ffffff !important;
+    border: 2px solid #ffffff !important;
+}
+.cadastros button{
+    margin-top: 15px;
+    width: 440px;
+    padding: 20px 171px;
+    border: none;
+    box-shadow: 0 11px 25px rgba(0, 0, 0, 0.18);
+    background-color: #d48c26;
+    border-radius: 25px;
+    display: flex;
+    align-self: center;
+    cursor: pointer;
+    
+}
