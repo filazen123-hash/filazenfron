@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="cadastro-adm" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/cadastros_logins/estilizacaocadastros.css">
+    <script src="/assets/JS/cadastrofuncionario.js " defer></script>
+    <title>tela-cadastro-usuário</title>
+</head>
+<body>
+    <header>
+        <div class="cabeçalho">
+            <div class="logotipo">
+                <img src="../assets/img/lotipo.png" alt="Logotipo da marca FilaZen">
+            </div>
+            <h3>C A D A S T R O - F U N C I O N A R I O</h3>
+
+            <details>
+                <summary ><strong></strong></summary>
+                <ul>
+                    <li><a href="../index.html" target="_blank" >Tela inicial</a></li>
+                </ul>
+            </details>
+        </div>
+    </header>
+    <main>
+        <div class="card-fundo">
+            <section class="cadastros">
+                <div class="nomecss">
+                    <label for="name">NOME COMPLETO: </label>
+                    <input type="text" id="nomefun" name="name" placeholder="Digite o nome do funcionario ">
+                </div>
+                <div class="nomecss">
+                    <label for="cpf">UNIDADE DE ATIVIDADE:</label>
+                    <input type="text" name="unidade" id="unidadefun" placeholder="Digite a unidade do funcionário">
+                </div>
+                <div class="nomecss">
+                    <label for="senha">CRIE UMA SENHA:</label>
+                    <input type="password" name="senhafuncionario" id="senhafun" maxlength="8" placeholder="Crie sua senha de até 8 caracteres">
+                </div>
+
+                <button onclick="cadastrado()">CONTINUAR</button>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

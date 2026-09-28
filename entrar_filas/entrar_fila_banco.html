@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/entrar_filas/estilizacaoescolhabanco.css" >
+    <script src="../assets/JS/entrar_fila_banco.js" defer></script>
+    <title>Entrar na fila do Banco</title>
+</head>
+<div class="cabeçalho">
+            <div class="logotipo">
+                <img src="../assets/img/lotipo.png" alt="Logotipo da marca FilaZen">
+            </div>
+            <h3> ENTRAR NA FILA DE BANCO </h3>
+
+            <details>
+                <summary ><strong></strong></summary>
+                <ul>
+                    <li><a href="/index.html" target="_blank" >Tela inicial</a></li>
+                </ul>
+            </details>
+        </div>
+<body>
+    <main> 
+
+        <div class="card-fundo">      
+            <div class="lado-esquerdo">
+                <div>
+                    <h1>MOTIVO DO <br>ATENDIMENTO:</h1>
+                </div>
+                <div>
+                    <select name="Tipo de atendimento" id="tipo-atendimento-banco">
+                        <option value="Contas" data-urgente="">Contas-Abertura de conta</option>
+                        <option value="Contas" data-urgente="true">Contas-Bloqueio de emergência</option>
+                        <option value="Contas" data-urgente="">Contas-Resolução de irregularidades cadastrais</option>
+                        <option value="Caixa" data-urgente="true">Caixa-Saques de altos valores</option>
+                        <option value="Caixa" data-urgente="">Caixa-Depósitos</option>
+                        <option value="Caixa" data-urgente="true">Caixa-Pagamento de boletos e tributos específicos</option>
+                        <option value="Financiamento" data-urgente="">Financiamento-Solicitar financiamento</option>
+                        <option value="Financiamento" data-urgente="">Financiamento-Assinutura de contratos</option>
+                        <option value="Créditos" data-urgente="true">Créditos-Contratar empréstimo</option>
+                        <option value="Créditos" data-urgente="">Créditos-Renegociação de dívidas</option>
+                        <option value="Acessos" data-urgente="true"> Acessos-Emitir/entregar cartão de emergência</option>
+                        <option value="Acessos" data-urgente="true"> Acessos-Recuperar senha/bloqueiar acesso</option>
+                        <option value="Acessos" data-urgente=""> Acessos-Validação de eletrônico</option>
+                        <option value="Investimentos" data-urgente="">Investimentos-Assessoria de investimentos</option>
+                    </select>
+                </div>
+            </div>
+            <hr />
+            <div class="lado-direito">
+                <h2> QUAL BANCO QUE DESEJA IR?</h2>
+                <div class="maps-e-texto">
+                <img src="../assets/img/maps_logotipo.png" alt="futuro botão para a pessoa escolher aqui a unidade">
+                <p><strong> Localize no mapa qual <br>unidade deseja ir</strong></p>
+                </div>
+                <p><strong>Ou</strong></p>
+                <p><strong>Selecione</strong></p>
+                <select id="unidades">
+
+                </select>   
+            </div>
+        </div>
+        <div>
+            <button>CONTINUAR</button>
+        </div>        
+        
+    </main>
+</body>
+</html>
