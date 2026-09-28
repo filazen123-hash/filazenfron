@@ -1,18 +1,15 @@
-const URL = "https://filazen.onrender.com";
+const URL = "https://onrender.com";
 
 async function ircadunidade() {
     const nomeempresa = document.getElementById("nomeempresa").value;
     const cnpj = document.getElementById("cnpj").value.replace(/\D/g, '');
     const tipos = document.querySelector('input[name="tipoempresa"]:checked')?.value;
-    
-    // O .trim() remove espaços em branco ou caracteres de controle invisíveis nas pontas
     const senhaempresa = document.getElementById("senhaempresa").value.trim();
 
-    // Validação dos campos
     if (!nomeempresa || !cnpj || !tipos || !senhaempresa) {
         alert("Por favor, escreva algo");
         return;
-    }
+    } 
 
     try {
         const resposta = await fetch(URL + '/empresa', {
@@ -21,13 +18,8 @@ async function ircadunidade() {
             body: JSON.stringify({
                 cnpj: cnpj,
                 tipo: tipos,
-                // CORREÇÃO: Enviando a variável 'cnpj' para a chave estrangeira (fk), 
-                // e não o 'nomeempresa' como estava antes.
-                fk_empresa_cnpj: cnpj, 
-                senha: senhaempresa
-                // OBS: Se a sua API também exigir o nome da empresa, 
-                // adicione a linha abaixo (verifique o nome exato esperado pela API):
-                // nome: nomeempresa 
+                senha: senhaempresa,
+                nome: nomeempresa // 👈 Substitua "nome" pelo nome exato que o seu backend espera (ex: nome_empresa)
             })
         });
 
@@ -36,9 +28,8 @@ async function ircadunidade() {
         if (resposta.ok) {
             window.location.href = "../../cadastros_logins/cadastrounidade.html";
         } else {
-            // Exibe no console o erro exato retornado pelo servidor para ajudar no diagnóstico
-            console.error("Erro do servidor:", dados);
-            alert("Erro ao cadastrar: " + (dados.detail?.[0]?.msg || "Verifique os dados."));
+            console.log("Erro retornado do servidor:", dados);
+            alert(dados.detail || "Erro na hora do cadastro!");
         }
     } catch (erro) {
         console.error("Erro na requisição:", erro);
