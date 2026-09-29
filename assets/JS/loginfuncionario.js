@@ -35,8 +35,8 @@ async function irescolha(event) {
             const erro = await resposta.json();
             tentativa++;
             if(tentativa >= 3){
-                
-                alert("Você já tentou 3 de 3 vezes, se caso esqueceu sua senha clique 'esqueci minha senha'");
+                alert("Você errou já 3 vezes sua senha, tente novamente mais tarde");
+                windows.location.href = "../../index.html"
             }
             alert (`Senha ou usuário incorretos, ${tentativa} de 3`);
         }
