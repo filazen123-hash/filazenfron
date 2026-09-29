@@ -25,7 +25,8 @@ async function irescolha(){
         tentativa++;
         
         if (tentativa >= 3){
-            alert("Você errou já 3 vezes, se caso esqueceu, clique em 'esqueci minha senha'!");
+            alert("Você errou já 3 vezes sua senha, tente novamente mais tarde");
+            windows.location.href = "../../index.html"
         }
         alert(`Senha ou email incorretos! Tentativa ${tentativa} de 3`)
     }
