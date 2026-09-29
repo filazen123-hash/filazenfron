@@ -23,7 +23,7 @@ async function irescolha(){
         window.location.href = "../entrar_filas/levarpara.html"
     } else{
         tentativa++;
-        alert ("usuário ou senha incorretos!");
+        
         if (tentativa >= 3){
             alert("Você errou já 3 vezes, se caso esqueceu, clique em 'esqueci minha senha'!");
         }
