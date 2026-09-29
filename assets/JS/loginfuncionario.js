@@ -1,4 +1,5 @@
 const url = "https://filazen.onrender.com"
+let tentativa = 0;
 async function irescolha(event) {
     event.preventDefault();
     const senha = document.getElementById("senhafunlg").value;
@@ -24,6 +25,7 @@ async function irescolha(event) {
         if (resposta.status === 200) {
             const dados = await resposta.json();
             alert("LOGIN REALIZADO, BEM-VINDO(A) DE VOLTA!");
+            tentativa=0;
     
             localStorage.setItem('funcionario_nome', dados.nome);
             localStorage.setItem('id_unidade', dados.id_unidade); // Guarda o id_unidade retornado!
@@ -31,7 +33,12 @@ async function irescolha(event) {
             
         } else {
             const erro = await resposta.json();
-            alert(erro.detail || "Usuário ou senha incorretos!");
+            tentativa++;
+            if(tentativa >= 3){
+                
+                alert("Você já tentou 3 de 3 vezes, se caso esqueceu sua senha clique 'esqueci minha senha'");
+            }
+            alert (`Senha ou usuário incorretos, ${tentativa} de 3}`);
         }
     } catch (error) {
         alert("Erro ao conectar com o servidor!");
