@@ -1,6 +1,6 @@
 const URL = "https://filazen.onrender.com";
 
-async function processarPainelAdmin() {
+async function proximo() {
     // 1. Captura os valores dos inputs (certifique-se de colocar IDs nos seus inputs HTML)
     const senha = document.getElementById("senhacliente").value.trim();
     const nome = document.getElementById("nomecliente").value.trim();
