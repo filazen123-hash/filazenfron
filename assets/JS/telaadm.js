@@ -2,8 +2,8 @@ const URL = "https://filazen.onrender.com";
 
 async function processarPainelAdmin() {
     // 1. Captura os valores dos inputs (certifique-se de colocar IDs nos seus inputs HTML)
-    const senha = document.getElementById("senhaCliente").value.trim();
-    const nome = document.getElementById("nomeCliente").value.trim();
+    const senha = document.getElementById("senhacliente").value.trim();
+    const nome = document.getElementById("nomecliente").value.trim();
     
     // Verifica se os checkboxes de prioridade estão marcados (exemplo usando IDs ou name)
     const simPrioridade = document.getElementById("prioridadeSim")?.checked;
