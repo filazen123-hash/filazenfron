@@ -7,6 +7,7 @@
     <title>Administrador - Banco</title>
 
     <link rel="stylesheet" href="../assets/css/telas_administrativas/stylebanco.css">
+    <script src="../assets/JS/telaadm.js" defer></script>
 </head>
 
 <body>
@@ -29,10 +30,10 @@
 
         <section class="esquerda">
 
-            <label class="titulo-campo">SENHA DO CLIENTE:</label>
+            <label class="titulo-campo" id="senhacliente">SENHA DO CLIENTE:</label>
             <input type="text">
 
-            <label class="titulo-campo">NOME DO CLIENTE:</label>
+            <label class="titulo-campo" id="nomecliente">NOME DO CLIENTE:</label>
             <input type="text">
 
         </section>
@@ -48,12 +49,12 @@
                 <p class="pergunta">É PRIORIDADE?</p>
 
                 <label class="opcao">
-<input type="checkbox">
+<input type="checkbox" value="sim">
 SIM
 </label>
 
                 <label class="opcao">
-<input type="checkbox">
+<input type="checkbox" value="nao">
 NÃO
 </label>
 
@@ -62,7 +63,7 @@ NÃO
             <div class="confirmar">
 
                 <label class="confirmar-check">
-<input type="checkbox">
+<input type="checkbox" value="presencaconfirmada">
 CONFIRMAR<br>PRESENÇA
 </label>
 
@@ -72,7 +73,7 @@ CONFIRMAR<br>PRESENÇA
 
     </main>
 
-    <button id="btnContinuar" class="continuar">
+    <button id="btnContinuar" class="continuar" onclick="proximo()">
 
         CONTINUAR
 
