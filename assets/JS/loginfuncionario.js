@@ -38,7 +38,7 @@ async function irescolha(event) {
                 
                 alert("Você já tentou 3 de 3 vezes, se caso esqueceu sua senha clique 'esqueci minha senha'");
             }
-            alert (`Senha ou usuário incorretos, ${tentativa} de 3}`);
+            alert (`Senha ou usuário incorretos, ${tentativa} de 3`);
         }
     } catch (error) {
         alert("Erro ao conectar com o servidor!");
