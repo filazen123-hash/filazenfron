@@ -3,7 +3,7 @@ const URL_ENTRAR_FILA = "https://filazen.onrender.com";
 
 document.addEventListener("DOMContentLoaded", async () => {
     const selectUnidades = document.getElementById("unidades");
-    const selectAtendimento = document.getElementById("tipo-atendimento-Hospital");
+    const selectAtendimento = document.getElementById("tipo-atendimento-orgaopublico");
     const btnContinuar = document.querySelector("button");
 
    try {
