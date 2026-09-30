@@ -4,7 +4,7 @@ async function cadastrarfuncionario(){
     const endereco = document.getElementById("endereco").value
     const  cep = document.getElementById("cep").value.replace(/\D/g, '');
     const empresaresp = document.getElementById("nomeempresa").value.replace(/\D/g, '');
-    if( !nomeuni || !endereco || !cep || !longitude || !latitude || !empresaresp){
+    if( !nomeuni || !endereco || !cep || !empresaresp){
         alert("Por favor, escreva algo");
         return;
     } 
