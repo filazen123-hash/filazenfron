@@ -65,5 +65,5 @@ async function cadastrado() {
     }
 }
 async function voltar() {
-    window.location.href = "cadastrocomo.html"
+    window.location.href = "cadastrocomo.html";
 }
