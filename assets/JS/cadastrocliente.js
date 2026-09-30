@@ -64,3 +64,6 @@ async function cadastrado() {
         alert("Não foi possível conectar ao servidor.");
     }
 }
+async function voltar() {
+    window.location.href = "cadastrocomo.html"
+}
