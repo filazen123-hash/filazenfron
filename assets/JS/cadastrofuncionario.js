@@ -26,3 +26,6 @@ async function cadastrado(){
                 alert(dados.detail || "Erro na hora do cadastro!");
             }
 }
+async function voltar() {
+    window.location.href = "cadastrounidade.html"
+}
