@@ -31,4 +31,7 @@ async function irescolha(){
         alert(`Senha ou email incorretos! Tentativa ${tentativa} de 3`)
     }
 }
+async function voltar() {
+    window.location.href = "entrarcomo.html"
+}
 
