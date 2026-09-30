@@ -31,3 +31,6 @@ async function cadastrarfuncionario(){
                 alert(dados.detail || "Erro na hora do cadastro!");
             }
 }
+async function voltar() {
+    window.location.href = "cadastroempresa.html"
+}
