@@ -27,5 +27,5 @@ async function cadastrado(){
             }
 }
 async function voltar() {
-    window.location.href = "cadastrounidade.html"
+    window.location.href = "cadastrocomo.html"
 }
