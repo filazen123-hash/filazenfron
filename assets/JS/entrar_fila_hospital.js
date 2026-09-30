@@ -67,3 +67,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
     });
 });
+async function voltar() {
+    window.location.href = "levarpara.html"
+}
