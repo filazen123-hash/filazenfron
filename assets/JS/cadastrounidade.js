@@ -3,8 +3,6 @@ async function cadastrarfuncionario(){
     const  nomeuni = document.getElementById("nomeunidade").value
     const endereco = document.getElementById("endereco").value
     const  cep = document.getElementById("cep").value.replace(/\D/g, '');
-    const longitude = document.getElementById("longitude").value
-    const latitude = document.getElementById("latitude").value
     const empresaresp = document.getElementById("nomeempresa").value.replace(/\D/g, '');
     if( !nomeuni || !endereco || !cep || !longitude || !latitude || !empresaresp){
         alert("Por favor, escreva algo");
@@ -16,8 +14,6 @@ async function cadastrarfuncionario(){
             body: JSON.stringify({
                 nome_fantasia: nomeuni,
                 endereco: endereco,
-                longitude: parseFloat(longitude),
-                latitude: parseFloat(latitude),
                 cep: cep,
                 fk_empresa_cnpj: empresaresp
             })
