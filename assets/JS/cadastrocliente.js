@@ -22,7 +22,7 @@ async function cadastrado() {
     const cpf = document.getElementById("cpf").value.replace(/\D/g, ''); 
     const emailcliente = document.getElementById("email").value;
     
-    let genero = document.querySelector('input[name="genero"]:checked')?.value || "masculino" || "Naofalado";
+    let genero = document.querySelector('input[name="genero"]:checked')?.value || "Naofalado";
 
     const radioPrioridade = document.querySelector('input[name="prioridades"]:checked');
     const seprioridade = radioPrioridade ? radioPrioridade.value.toLowerCase() === 'sim' : false;
