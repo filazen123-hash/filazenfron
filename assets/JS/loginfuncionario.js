@@ -44,5 +44,8 @@ async function irescolha(event) {
         alert("Erro ao conectar com o servidor!");
     }
 }
+async function voltar() {
+    window.location.href = "entrarcomo.html"
+}
 
 
