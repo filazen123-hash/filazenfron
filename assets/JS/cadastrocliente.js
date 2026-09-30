@@ -11,7 +11,7 @@ async function cadastrado() {
     const diaAtual = hoje.getDate();
     const anoAtual = hoje.getFullYear();
     const mesAtualFormatado = String(mesAtual).padStart(2, '0');
-    document.getElementById("nascimento").max = `${anoAtual}-${mesAtualFormatado}
+    document.getElementById("nascimento").max = `${anoAtual}-${mesAtualFormatado}`
 
     if (mesAtual < mesNasc || (mesAtual === mesNasc && diaAtual < diaNasc)) {
         idade--;
