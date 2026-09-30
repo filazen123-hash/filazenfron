@@ -32,5 +32,5 @@ async function cadastrarfuncionario(){
             }
 }
 async function voltar() {
-    window.location.href = "cadastroempresa.html"
+    window.location.href = "cadastrocomo.html"
 }
