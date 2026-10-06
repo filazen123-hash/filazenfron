@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Fredoka:wght@300..700&family=Gluten:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Purple+Purse&family=Quicksand:wght@300..700&family=Ribeye&display=swap');
-*{
-    margin: 0%;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+*{    margin: 0%;
     padding: 0px;
 }
 .cabeçalho{
     margin: 0%;
-    padding: 1px 1px;
+    padding: 20px 42px;
     width: 100wv;
     height: 70px;
     padding-right: 40px;
@@ -15,23 +14,26 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 9px;
-    background-color: #f5efe0;
+    background-color: #FBF7F5;
     position: relative;
     z-index: 10;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
 }
 .cabeçalho h3{
-    font-family: Georgia, "Times New Roman", serif;
-    font-size:18px;
+    font-family:'Poppins', sans-serif;
+    font-size:15px;
     font-weight:600;
-    letter-spacing:3px;
+    letter-spacing:12px;
     color:#2B1304;
+    text-align: center;
 }
+
 .logotipo img{
-    width: 145px;
-    left:30px;
-    padding-left: 25px;
+    width: 180px;
+    height: auto;
+    padding-left: 10px;
 }
+
 summary::marker{
     content: "\22EE";
     font-weight: bolder;
@@ -39,7 +41,7 @@ summary::marker{
     font-size: 50px;
 }
 details[open] summary::marker{
-color: #383837;
+color: #2B1304;
 font-size: 27px;
 } 
 
@@ -48,7 +50,7 @@ li{
 }
 
 a{
-    color: #383837;
+    color: #2B1304;
 }
 main{
     min-height: 100vh;
@@ -132,26 +134,22 @@ hr{
     background-color: #FFF3E0;
     cursor: pointer;
 }
-button{
-    margin-top:20px;
 
-    margin-left:760px;
-    background:#d48c26;
-
-    color:#2B1304;
-    border:none;
-
-    border-radius:30px;
-
-    padding:14px 28px;
-
-    font-weight:bold;
-
-    font-size:18px;
-
-    box-shadow:0 6px 12px rgba(0,0,0,.30);
-
-    cursor:pointer;
-
-    transition:0.2s;
+.container-botoes {
+  cursor: pointer; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  gap: 15px;             
+  width: 100%;         
+}
+button {
+  cursor: pointer; 
+  width: 200px;           
+  text-align: center;     
+  padding: 27px 21px;     
+  border-radius: 50px;    
+  background-color: #d48c26;
+  color: #2B1304;
+  border: none;
 }

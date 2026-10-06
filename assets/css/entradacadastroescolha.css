@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.cabeçalho {
+    margin: 0;
+    padding: 20px 42px;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 9px;
+    background-color: #FBF7F5;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+}
+
+.cabeçalho h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 12px;
+    color: #2B1304;
+    text-align: center;
+}
+
+.logotipo img {
+    width: 180px;
+    height: auto;
+    padding-left: 10px;
+}
+
+summary::marker {
+    content: "\22EE";
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+details[open] summary::marker {
+    color: #2B1304;
+    font-size: 27px;
+} 
+
+li {
+    font-size: 20px;
+}
+
+a {
+    color: #2B1304;
+}
+
+.main-container {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+main{
+    background-image: url('/assets/img/fundo.png');
+}
+.card-container {
+    width: 750px;
+    height: 130px;
+    background-color: #ff7b00;
+    border: 1px solid #ff7b00;
+    border-radius: 25px;
+    padding: 220px 110px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.18);
+}
+
+.card-container::before {
+    content: "ENTRAR COMO:";
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #000000;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+
+.card-fundo, 
+.botoes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Espaçamento entre o segundo e o terceiro botão */
+.botoes {
+    margin-top: 15px; 
+}
+
+
+.btn-option {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    padding: 12px 20px;
+    background-color: #EEF2F6; /* Cor clara estilo botão do protótipo */
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+

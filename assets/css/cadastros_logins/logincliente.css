@@ -1,16 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Cabeçalho */
 .header-table {
-  height: 20px;
+  height: 70px;
   background-color: #FBF7F5;
-  padding: 5px 40px;
+  padding: 20px 42px;
   border-collapse: collapse;
   position: relative;
-  z-index: 5;
+  z-index: 10;
   table-layout: fixed;
   width: 100%;
 }
@@ -30,73 +31,12 @@ body {
   letter-spacing: 2px;
 }
 
-/* Logo com "iconzinho" de pessoas */
-.logo-wrap {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+.logo-tipo img{
+  width: 180px;
+  height: auto;
+  padding-left: 10px;
 }
 
-.logo-icon {
-  position: relative;
-  width: 42px;
-  height: 34px;
-  flex-shrink: 0;
-}
-
-/* Cada "boneco" = uma cabeça (círculo) + um ombro (meia-esfera) por baixo */
-.person {
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  overflow: hidden;
-}
-
-.person-back {
-  left: 0;
-  top: 2px;
-}
-
-.person-front {
-  left: 12px;
-  top: 0px;
-  width: 30px;
-  height: 24px;
-}
-
-.person .head {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-
-.person .shoulders {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 11px;
-  border-radius: 11px 11px 0 0;
-}
-
-.person-back .head,
-.person-back .shoulders {
-  background-color: #FFB857;
-}
-
-.person-front .head,
-.person-front .shoulders {
-  background-color: #FF912D;
-}
-
-.logo-text {
-  line-height: 1.1;
-}
 summary::marker{
     content: "\22EE";
     font-weight: bolder;
@@ -104,7 +44,7 @@ summary::marker{
     font-size: 55px;
 }
 details[open] summary::marker{
-color: #383837;
+color: #2B1304;
 font-size: 27px;
 } 
 
@@ -113,13 +53,13 @@ li{
 }
 
 a{
-    color: #383837;
+    color: #2B1304;
 }
 
 body{
   background-image: url(/assets/img/fundo.png);
 }
-/* Card laranja de login */
+
 .login-card {
   position: relative;
   background-color: #ff7b00;
@@ -177,4 +117,23 @@ body{
 .login-card button:hover {
   background-color: #ffc470;
 }
-
+.botoes {
+  cursor: pointer; 
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;    
+  gap: 15px;             
+  width: 100%;         
+}
+button {
+  cursor: pointer; 
+  width: 200px;           
+  text-align: center;     
+  padding: 27px 21px;     
+  border-radius: 50px;
+  margin-top: 9px;    
+  background-color: #d48c26;
+  color: #2B1304;
+  border: none;
+}

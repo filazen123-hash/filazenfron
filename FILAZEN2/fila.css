@@ -1,10 +1,9 @@
-/* RESET */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -34,7 +33,7 @@ body {
     width: 100vw;
     height: 80px;
 
-    background: #F7F2E8;
+    background: #FBF7F5;
 
     display: flex;
     align-items: center;
@@ -96,13 +95,13 @@ body {
 
 .card {
 
-    width: 900px;
+    width: 1000px;
 
     background: #FF7B00;
 
     border-radius: 22px;
 
-    padding: 35px 35px;
+    padding: 60px 60px;
 
     gap: 70px;
 
@@ -123,7 +122,7 @@ body {
 .senha {
     
     width: 40%;
-    height: 480px !important;
+    height: 490px !important;
 
     background: #FFFFFF;
     border-radius: 30px;
@@ -173,13 +172,13 @@ body {
 /* PARTE DA DIREITA */
 
 .informacoes {
-    width: 58%;
+    width: 100%;
 
     background: #FFFFFF;
 
-    border-radius: 30px;
+    border-radius: 20px;
 
-    padding: 35px 25px;
+    padding: 35px 50px;
 
     display: flex;
 
@@ -197,7 +196,7 @@ body {
 
 .tempo {
     
-    width: 45%;
+    width: 40%;
 
     text-align: center;
 

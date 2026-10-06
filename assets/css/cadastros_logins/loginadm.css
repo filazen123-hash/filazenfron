@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Cabeçalho */
+.header-table {
+  height: 70px;
+  background-color: #FBF7F5;
+  padding: 20px 42px;
+  border-collapse: collapse;
+  position: relative;
+  z-index: 10;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.header-table td:first-child,
+.header-table td:last-child {
+  width: 220px;
+}
+
+.header-table td {
+  vertical-align: middle;
+  padding: 10px;
+  color: #1C1C1C;
+}
+
+.header-table b {
+  letter-spacing: 2px;
+}
+
+.logo-tipo img{
+  width: 180px;
+  height: auto;
+  padding-left: 10px;
+}
+
+summary::marker{
+    content: "\22EE";
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 55px;
+}
+details[open] summary::marker{
+color: #2B1304;
+font-size: 27px;
+} 
+
+li{
+    font-size: 20px;
+}
+
+a{
+    color: #2B1304;
+}
+
+body{
+  background-image: url(/assets/img/fundo.png);
+}
+
+.login-card {
+  position: relative;
+  background-color: #ff7b00;
+  max-width: 1000px;
+  margin: 30px auto 0 auto;
+  padding: 70px 75px 90px 75px;
+  border-radius: 45px;
+  overflow: visible;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.18);
+  z-index: 1;
+}
+
+
+.login-card table {
+  position: relative;
+  z-index: 1;
+  border-collapse: separate;
+  border-spacing: 15px;
+}
+
+.login-card font {
+  color: #1C1C1C;
+  letter-spacing: 1px;
+}
+
+/* Campos de texto */
+.login-card input {
+  width: 100%;
+  min-width: 420px;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  color: #1C1C1C;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+/* Botão continuar */
+.login-card button {
+  position: relative;
+  z-index: 1;
+  background-color: #d48c26;
+  border: none;
+  color: #1C1C1C;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 16px 45px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-card button:hover {
+  background-color: #ffc470;
+}
+.botoes {
+  display: flex;            
+  justify-content: center;       
+  align-items: center;      
+  gap: 15px;               
+  width: 100%;          
+  cursor: pointer;
+       
+}
+button {
+  cursor: pointer; 
+  width: 200px;           
+  text-align: center;     
+  padding: 18px 21px;
+  border-radius: 50px;    
+  margin-top: 5px;
+  background-color: #d48c26;
+  color: #2B1304;
+  border: none;
+   
+}
