@@ -30,7 +30,7 @@ async function proximo() {
                 senha: senha,
                 nome: nome,
                 prioridade: simPrioridade ? "Sim" : "Não",
-                presenca: confirmarPresenca
+                presenca: confirmarPresenca,
                 id_unidade: parseInt(localStorage.getItem('id_unidade'))
             })
         });
